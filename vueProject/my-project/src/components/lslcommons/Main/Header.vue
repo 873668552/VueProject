@@ -5,7 +5,7 @@
       <input id="searchput" type="text">
     </h1>
     <div class="nav-right">
-
+       <i></i>
     </div>
   </header>
 </template>
@@ -13,7 +13,7 @@
 <script>
 export default {
   name: "AppHeader",
-  dara() {
+  data() {
     return {
       message: "hello"
     };
@@ -27,7 +27,6 @@ export default {
   height: 0.5rem;
   padding: 0.07rem;
   display: flex;
-  margin: auto;
   justify-content: space-between;
   .nav-search {
     display: flex;
