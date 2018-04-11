@@ -10,7 +10,22 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/mz': {
+        target: 'https://m.maizuo.com/',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/mz': ''
+        }
+      },
+      '/lb': {
+        target: 'https://m.maizuo.com/',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/lb': ''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -20,7 +35,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

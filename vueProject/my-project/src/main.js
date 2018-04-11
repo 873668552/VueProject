@@ -6,7 +6,11 @@ import router from './router'
 
 // 1 引用
 import first from './components/first'
+import './stylesheets/main.scss'
+import 'animate.css'
+import axios from 'axios'
 
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
