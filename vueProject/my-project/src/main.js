@@ -9,6 +9,7 @@ import first from './components/first'
 import './stylesheets/main.scss'
 import 'animate.css'
 import axios from 'axios'
+import filter from './api/filter'
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
@@ -19,5 +20,4 @@ new Vue({
   router,
   components: { App },
   template: '<App/>'
-
 })

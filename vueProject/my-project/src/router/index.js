@@ -3,7 +3,8 @@ import Router from 'vue-router'
 //首页Home Header banner main footer 放里面
 import Home from '../components/lslcommons/Home/Home.vue'
 import Regist from '../components/lslcommons/Assortment/Personal.vue'
-import Assortment from '../components/lslcommons/Assortment/Assortment.vue'
+// import Assortment from '../components/lslcommons/Assortment/Assortment.vue'
+import Assortment from '../components/zrpcomp/listcomp/list.vue'
 import Main from '../components/lslcommons/Assortment/Mains.vue' 
 import Shop from '../components/lslcommons/Assortment/Shoop.vue'
 import Order from '../components/lslcommons/Assortment/Order.vue'
@@ -21,8 +22,9 @@ let router = new Router({
           name:'Main',
           component:Main
         },
+        // 列表组件
         {
-          path:'classify',//二级路由不用加/
+          path:'classify',
           name:'Assortment',
           component:Assortment
         },
