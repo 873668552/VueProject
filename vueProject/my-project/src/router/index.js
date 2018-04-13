@@ -8,7 +8,7 @@ import Assortment from '../components/zrpcomp/listcomp/list.vue'
 import Main from '../components/lslcommons/Assortment/Mains.vue' 
 import Shop from '../components/lslcommons/Assortment/Shoop.vue'
 import Order from '../components/lslcommons/Assortment/Order.vue'
-
+import NotFound from '../components/lslcommons/Main/NotFound.vue'
 Vue.use(Router)
 
 let router = new Router({
@@ -16,6 +16,7 @@ let router = new Router({
       path: '/',
       name: 'Home', //给路由起名
       component: Home ,//我们要渲染的组件
+      redirect:'main',//默认渲染main组件
       children:[
         {
           path:'main',
@@ -44,6 +45,10 @@ let router = new Router({
       path:'/regist',
       name:'Regist',
       component:Regist
+    },
+    {
+      path:'**',
+      component:NotFound
     }
   ]
 })
