@@ -21,7 +21,7 @@ export default {
   },
   created(){
    
-    this.__proto__.$http('http://localhost:3000/data/goods?key='+this.tarStr).then((res)=>{
+    this.__proto__.$http('http://10.9.153.48:3000/data/goods?key='+this.tarStr).then((res)=>{
         this.arr = res.data;
         console.log(res.data)
     })

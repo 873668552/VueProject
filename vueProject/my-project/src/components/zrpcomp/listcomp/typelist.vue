@@ -32,7 +32,7 @@ export default {
   },
   created(){
       // 请求
-      axios('http://localhost:3000/data').then((res)=>{
+      axios('http://10.9.153.48:3000/data').then((res)=>{
           this.lis = res.data;
       })
   }
