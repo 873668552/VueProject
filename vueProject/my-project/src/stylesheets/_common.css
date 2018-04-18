@@ -6,3 +6,18 @@
   width: 0.08rem;
   height: 0.08rem;
 }
+
+.mask {
+  width: 3.2rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+image[lazy=loading] {
+  width: 40px;
+  height: 300px;
+  margin: auto;
+}

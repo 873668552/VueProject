@@ -1,8 +1,9 @@
 <template>
   <section id="recommend">
+    
        <a href=""><img src="http://www.zhongyunshop.com/public/m/img/imgtitle.jpg" alt=""></a>
         <div class="My_recommend" v-for="creat in creature" :key = 'creat.id'>
-              <img :src="creat.cover.origin" alt="">
+              <img v-lazy="creat.cover.origin" alt="">
               <p>{{creat.name}}</p>            
         </div>
         
@@ -24,7 +25,7 @@ export default {
           params: {
             __t: Date.now(),
             page: 1,
-             count: 1000,
+            count: 1000,
           }
         })
         .then(res => {
