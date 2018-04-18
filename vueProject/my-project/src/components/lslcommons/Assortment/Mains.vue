@@ -1,7 +1,7 @@
 <template>
   <main class="main">  
      <!-- <router-view></router-view> -->
-      <div class="my-mains">      
+      <div class="my-mains" >      
           <app-banner></app-banner>
           <app-loc></app-loc>
           <app-new></app-new>
@@ -9,7 +9,7 @@
           <app-show></app-show>
           <app-smallbanner></app-smallbanner>
           <app-recommend></app-recommend>
-      </div>
+      </div>   
   </main>
 </template>
 
@@ -28,7 +28,7 @@ export default {
     AppNew,
     AppSmallbanner,
     AppShow,
-    AppRecommend
+    AppRecommend,
   },
   data() {
     return {};
