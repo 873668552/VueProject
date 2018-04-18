@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 //首页Home Header banner main footer 放里面
 import Home from '../components/lslcommons/Home/Home.vue'
-import Regist from '../components/lslcommons/Assortment/Personal.vue'
+import Regist from '../components/zrpcomp/regcomp/person.vue'
 import Assortment from '../components/zrpcomp/listcomp/list.vue'
 import Main from '../components/lslcommons/Assortment/Mains.vue' 
 import Shop from '../components/lslcommons/Assortment/Shoop.vue'

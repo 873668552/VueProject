@@ -2,8 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
 
+import router from './router'
+import store from './store'
 // 1 引用
 import first from './components/first'
 import './stylesheets/main.scss'
@@ -18,6 +19,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,//引入根实例中才能被其组件实力和访问
   components: { App },
   template: '<App/>'
 })
