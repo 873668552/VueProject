@@ -12,6 +12,15 @@ import 'animate.css'
 import axios from 'axios'
 import filter from './api/filter'
 
+//mint-ui
+import { Lazyload, InfiniteScroll} from 'mint-ui';
+Vue.use(Lazyload);
+
+
+
+Vue.use(InfiniteScroll);
+
+
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 

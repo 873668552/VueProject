@@ -54,7 +54,6 @@ export default {
 .banner {
   width: 100%;
   height: 1.5655rem;
-  background: rgb(127, 255, 180);
   img {
     height: 100%;
     width: 100%;

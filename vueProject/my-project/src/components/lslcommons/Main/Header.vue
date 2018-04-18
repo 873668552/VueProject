@@ -1,10 +1,10 @@
 <template>
   <header class="header">
-    <h1 class="nav-search">
+    <router-link pag='h2' v-for='pat in mypath' :key="pat.id" :to="pat.path" class="nav-search">
       <!-- <button id="searchbtn" type="button">aa</button> -->
       <input placeholder="男士商务正库" id="searchput" type="text">
       <i></i>
-    </h1>
+    </router-link>
     <div class="nav-right">
        <i class="fa fa-user-circle"></i>
     </div>
@@ -16,7 +16,12 @@ export default {
   name: "AppHeader",
   data() {
     return {
-      message: "hello"
+      mypath: [
+        {
+          id: 1,
+          path: "/product"
+        }
+      ]
     };
   }
 };

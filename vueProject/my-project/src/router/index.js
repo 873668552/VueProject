@@ -4,50 +4,56 @@ import Router from 'vue-router'
 import Home from '../components/lslcommons/Home/Home.vue'
 import Regist from '../components/zrpcomp/regcomp/person.vue'
 import Assortment from '../components/zrpcomp/listcomp/list.vue'
-import Main from '../components/lslcommons/Assortment/Mains.vue' 
+import Main from '../components/lslcommons/Assortment/Mains.vue'
 import Shop from '../components/lslcommons/Assortment/Shoop.vue'
 import Order from '../components/lslcommons/Assortment/Order.vue'
 import NotFound from '../components/lslcommons/Main/NotFound.vue'
+import product from '../components/lslcommons/Assortment/Product.vue'
 Vue.use(Router)
 
 let router = new Router({
   routes: [{ //路由表
       path: '/',
       name: 'Home', //给路由起名
-      component: Home ,//我们要渲染的组件
-      redirect:'main',//默认渲染main组件
-      children:[
-        {
-          path:'main',
-          name:'Main',
-          component:Main
+      component: Home, //我们要渲染的组件
+      redirect: 'main', //默认渲染main组件
+      children: [{
+          path: 'main',
+          name: 'Main',
+          component: Main
         },
         // 列表组件
         {
-          path:'classify',
-          name:'Assortment',
-          component:Assortment
+          path: 'classify',
+          name: 'Assortment',
+          component: Assortment
         },
         {
-          path:'shopping',//二级路由不用加/
-          name:'Shop',
-          component:Shop
+          path: 'shopping', //二级路由不用加/
+          name: 'Shop',
+          component: Shop
         },
         {
-          path:'order',//二级路由不用加/
-          name:'Order',
-          component:Order
-        }
+          path: 'order', //二级路由不用加/
+          name: 'Order',
+          component: Order
+        },
+
       ]
     },
     {
-      path:'/regist',
-      name:'Regist',
-      component:Regist
+      path: '/regist',
+      name: 'Regist',
+      component: Regist
     },
     {
-      path:'**',
-      component:NotFound
+      path: '/product', //二级路由不用加/
+      name: 'product',
+      component: product
+    },
+    {
+      path: '**',
+      component: NotFound
     }
   ]
 })
