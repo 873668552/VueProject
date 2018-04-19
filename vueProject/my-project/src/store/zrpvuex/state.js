@@ -4,5 +4,26 @@ export default {
     password:'456',
     test:'test',
     title:'',
-    newUer:[{name:'123',word:'123'}]
+    newUer:[{name:'123',word:'123'}],
+    goods:[
+        {"日用":["舒肤佳","六神","护肤霜"]},
+        {"百货":["我爱家","平底锅","保温壶"]},
+        {"奇葩集合":["蛋蛋卡","勾勾木","偏偏机","螺丝帽","缝纫机零件"]},
+        {"日用":["舒肤佳","六神","护肤霜"]},
+        {"日用":["舒肤佳","六神","护肤霜"]},
+        {"日用":["舒肤佳","六神","护肤霜"]},
+        {"百货":["我爱家","平底锅","保温壶"]},
+        {"奇葩集合":["蛋蛋卡","勾勾木","偏偏机","螺丝帽","缝纫机零件"]},
+        {"日用":["舒肤佳","六神","护肤霜"]},
+        {"日用":["舒肤佳","六神","护肤霜"]},
+        {"百货":["我爱家","平底锅","保温壶"]},
+        {"奇葩集合":["蛋蛋卡","勾勾木","偏偏机","螺丝帽","缝纫机零件"]},
+        {"日用":["舒肤佳","六神","护肤霜"]}
+    ],
+    showGood:[
+        {"id":1,"name":"苹果手机","price":1888,"curPrice":"1000","summer":"我们的最爱","type":"plsX","img":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3627107647,3127034248&fm=27&gp=0.jpg"},
+        {"id":2,"name":"苹果手机","price":3888,"curPrice":"2000","summer":"我们的最爱","type":"plsX","img":"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=4017073113,3224248829&fm=58&bpow=439&bpoh=675"},
+        {"id":3,"name":"苹果手机","price":5888,"curPrice":"3000","summer":"我们的最爱","type":"plsX","img":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2618108846,1086297512&fm=27&gp=0.jpg"},
+        {"id":4,"name":"苹果手机","price":1888,"curPrice":"300","summer":"我们的最爱","type":"plsX","img":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2457388993,155868241&fm=27&gp=0.jpg"}
+    ]
 }

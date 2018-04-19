@@ -10,9 +10,10 @@
 </template>
 
 <script>
-// 引入axios
+// 引入axios goods
 import Vue from 'vue'
 import axios from 'axios'
+import {mapState} from 'vuex'
 export default {
   name:'typelist',
   data(){
@@ -20,6 +21,11 @@ export default {
           lis:[],
           listr:''
       }
+  },
+  computed:{
+      ...mapState({
+          goods:(state)=>{return state.zrpStor.goods}
+      })
   },
   methods:{
       // 点击单个商品的事件
@@ -32,12 +38,25 @@ export default {
   },
   created(){
       // 请求
-      axios('http://10.9.153.48:3000/data').then((res)=>{
-          this.lis = res.data;
-      })
+    //   axios('http://10.9.153.48:3000/data').then((res)=>{
+    //       this.lis = res.data;
+    //   })
+    console.log(this.goods)
+    this.lis = getvalue(this.goods)
+    console.log(this.lis)
   }
 }
-
+function getvalue(arr){
+    
+    let tarArr = arr.map( function(val) {
+        let key = Object.keys(val)[0],
+        tar = [];
+        tar.push(key)
+        tar.push(val[key])
+        return tar;
+    })
+    return tarArr
+}
 </script>
 
 <style scoped lang='scss'>
