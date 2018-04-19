@@ -1,12 +1,14 @@
 import Vue from 'vue'
-import store from 'vuex'
+import Vuex from 'vuex'
 
-Vue.use(store)
+Vue.use(Vuex)
 
 // 引入必要模块
-import stage from './stage'
-const tar = new store.Store({
-    stage
+import zrpStor from './zrpvuex'
+const store = new Vuex.Store({
+    modules: {
+        zrpStor
+    }
 })
 
-export default tar;
+export default store;

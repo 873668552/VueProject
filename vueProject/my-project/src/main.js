@@ -20,7 +20,6 @@ Vue.use(Lazyload);
 
 Vue.use(InfiniteScroll);
 
-
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 

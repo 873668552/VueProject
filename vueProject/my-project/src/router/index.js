@@ -2,13 +2,16 @@ import Vue from 'vue'
 import Router from 'vue-router'
 //首页Home Header banner main footer 放里面
 import Home from '../components/lslcommons/Home/Home.vue'
-import Regist from '../components/zrpcomp/regcomp/person.vue'
+import Regist from '../components/zrpcomp/logAndRegist/person.vue'
 import Assortment from '../components/zrpcomp/listcomp/list.vue'
 import Main from '../components/lslcommons/Assortment/Mains.vue'
 import Shop from '../components/lslcommons/Assortment/Shoop.vue'
 import Order from '../components/lslcommons/Assortment/Order.vue'
 import NotFound from '../components/lslcommons/Main/NotFound.vue'
 import product from '../components/lslcommons/Assortment/Product.vue'
+import log from '../components/zrpcomp/logAndRegist/sonComp/body/log.vue'
+import info from '../components/zrpcomp/logAndRegist/sonComp/body/info.vue'
+import reg from '../components/zrpcomp/logAndRegist/sonComp/body/reg.vue'
 Vue.use(Router)
 
 let router = new Router({
@@ -44,7 +47,25 @@ let router = new Router({
     {
       path: '/regist',
       name: 'Regist',
-      component: Regist
+      component: Regist,
+      redirect: '/regist/info',
+      children:[
+        {
+          path:'log',
+          name:'log',
+          component:log
+        },
+        {
+          path:'reg',
+          name:'reg',
+          component:reg
+        },
+        {
+          path:'info',
+          name:'info',
+          component:info
+        }
+      ]
     },
     {
       path: '/product', //二级路由不用加/
