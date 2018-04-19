@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  // 路由传参 ,传一个商品id
+  // 路由传参 ,传一个商品id.
   created(){
     console.log(this.$router.currentRoute.query)
   },
